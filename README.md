@@ -1,4 +1,13 @@
-demo
+Google Analytics demo project
 ====
 
-Test project to act as a demo
+****This project is intended to run on heroku.****
+
+***Local Instalation***
+
+In order to install locally please run the following commands, assuming you have node installed and are running mongoDB and redis locally on the default ports.
+
+    npm install
+    
+
+
