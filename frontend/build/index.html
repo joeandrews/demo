@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="call-carrot">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <link href="css/lib.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
+  </head>
+  <header ng-controller='headerCtrl'>
+  <div class='loggedOut' ng-hide='Auth.isLoggedIn()'>
+    <a href='#/signup' class="header-msg fr">Signup</a>
+    <a href='http://blog.callcarrot.com' class="header-msg fr">Blog</a>
+    <a href='#/login'  class="header-msg fr">Login</a>
+    <!--     <a href='#/signup'  class="header-msg fr">Sign Up</a>
+    -->      
+    <a href="#/" style="color: #FF6600; margin-left: 2em; font-size: 1.5em; font-weight:900; font-family: 'Gloria Hallelujah', cursive;">
+        CallCarrot
+    </a>
+  </div>
+  <div class='loggedIn' ng-show='Auth.isLoggedIn()'>
+    <a  class="header-msg fr" ng-click='Auth.logout()'>Logout</a>
+    <!--     <a href='#/signup'  class="header-msg fr">Sign Up</a>
+    -->      
+    <a href="#/" style="color: #FF6600; margin-left: 2em; font-size: 1.5em; font-weight:900; font-family: 'Gloria Hallelujah', cursive;">
+        CallCarrot
+    </a>
+  </div>  
+  </header>
+  <body>
+    <div class="" ng-view=""></div>
+    <script src="//static.twilio.com/libs/twiliojs/1.1/
+twilio.js"></script>
+    <script src="js/lib.js"></script>
+    <script src="js/templates.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

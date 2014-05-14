@@ -1,0 +1,18 @@
+ <h2>Analytics Data</h2> 
+  <div class="btn-group" dropdown>
+  <button type="button" class="btn">Select TimeFrane</button>
+  <button type="button" class="btn dropdown-toggle">
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a ng-click='changeData("day")'>Day</a></li>
+    <li><a ng-click='changeData("week")'>Week</a></li>
+    <li><a ng-click='changeData("month")'>Month</a></li>
+  </ul>
+</div>
+ <div 
+    data-ac-chart="'bar'" 
+    data-ac-data="data" 
+    data-ac-config="config" 
+    class="chart">
+  </div>

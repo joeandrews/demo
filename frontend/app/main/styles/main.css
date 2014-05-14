@@ -1,0 +1,8 @@
+.container.main {
+    width:100%;
+}
+.container.main .navbar {
+    margin: 0em -15px;
+    margin-bottom: 1em;
+}
+

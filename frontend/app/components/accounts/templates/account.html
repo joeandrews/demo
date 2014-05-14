@@ -1,0 +1,20 @@
+<h2>Please select a google Analytics Property</h2>
+<div ng-repeat="account in accountProperties">
+	<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+				<h1>
+					{{account.name}}
+				</h1>
+				<p>
+					{{account.id}} <br>
+					<a href="{{account.websiteUrl}}">{{account.websiteUrl}}</a>
+					{{account.created.split("T")[0]}}
+				</p>
+				<p>
+					<a class="btn btn-primary btn-large" href="#/property/{{account.id}}">View Analytics</a>
+				</p>
+		</div>
+	</div>
+</div>
+</div>
