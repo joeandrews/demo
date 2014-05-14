@@ -2,7 +2,7 @@ Google Analytics demo project
 ====
 
 ****This project is intended to run on heroku.****
-
+http://intense-ridge-2363.herokuapp.com/#/
 ***Local Instalation***
 
 In order to install locally please run the following commands, assuming you have node installed.
